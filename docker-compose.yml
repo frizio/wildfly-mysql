@@ -3,13 +3,13 @@ version: "2"
 services:
   app:
     container_name: "app"
-    image: "metz/wildfly"
+    image: "frizio/wildfly"
     environment:
       - WILDFLY_USER=admin
-      - WILDFLY_PASS=adminPassword
-      - DB_NAME=sample
-      - DB_USER=mysql
-      - DB_PASS=mysql
+      - WILDFLY_PASS=password1;
+      - DB_NAME=test
+      - DB_USER=wildfly_user
+      - DB_PASS=password1;
       - DB_URI=db:3306
     depends_on:
       - db
@@ -21,9 +21,9 @@ services:
     container_name: "db"
     image: "mysql:latest"
     environment:
-      - MYSQL_DATABASE=sample
-      - MYSQL_USER=mysql
-      - MYSQL_PASSWORD=mysql
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=wildfly_user
+      - MYSQL_PASSWORD=password1;
       - MYSQL_ROOT_PASSWORD=supersecret
     volumes:
       - ./workdir/db/init/:/docker-entrypoint-initdb.d/ # init database

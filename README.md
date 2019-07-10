@@ -3,6 +3,11 @@
 [![Docker Build Status](https://img.shields.io/docker/build/metz/wildfly-mysql.svg)](https://hub.docker.com/r/metz/wildfly-mysql/)
 [![Docker Automated build](https://img.shields.io/docker/automated/metz/wildfly-mysql.svg)](https://hub.docker.com/r/metz/wildfly-mysql/)
 
+# Discaimer (work in progress)
+Il Dockerfile originale è di Christian Metz (christian@metzweb.net) ed era stato rilasciato sotto Licenza MIT.
+Corretto e riadattato da Maurizio La Rocca (mrz.larocca@gmail.com) 
+Wildfly 17, MySql 8.0.16 e Java 11
+
 ## About
 
 This repo contains the DevStack Dockerfile.  
@@ -26,6 +31,11 @@ The development stack consists of:
 This section gives you a quick overview on how to get started.
 
 Boot the environment by running:
+
+```sh
+# Create wilfly container with initial setup (users, password, datasources)
+$ docker build -t frizio/wildfly .
+```
 
 ```sh
 # starts the `app` and `db` containers
