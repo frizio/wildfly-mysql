@@ -5,8 +5,8 @@
 
 # Discaimer (work in progress)
 Il Dockerfile originale è di Christian Metz (christian@metzweb.net) ed era stato rilasciato sotto Licenza MIT.
-Corretto e riadattato da Maurizio La Rocca (mrz.larocca@gmail.com) 
-Wildfly 17, MySql 8.0.16 e Java 11
+Corretto e riadattato da Maurizio La Rocca (mrz.larocca@gmail.com).
+Luglio 2019: Wildfly 17, MySql 8.0.16 e Java 11
 
 ## About
 
