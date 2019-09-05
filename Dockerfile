@@ -5,11 +5,11 @@ FROM jboss/wildfly:latest
 LABEL maintainer="Maurizio La Rocca <mrz.larocca@gmail.com>"
 LABEL original_maintainer="Christian Metz <christian@metzweb.net>"
 
-# Appserver
+# Appserver container variables
 ENV WILDFLY_USER admin
 ENV WILDFLY_PASS password1;
 
-# Database
+# Database container variable
 ENV DB_NAME test
 ENV DB_USER wildfly_user
 ENV DB_PASS password1;
