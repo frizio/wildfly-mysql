@@ -15,7 +15,7 @@ ENV DB_USER wildfly_user
 ENV DB_PASS password1;
 ENV DB_URI db:3306
 
-ENV MYSQL_VERSION 8.0.16
+ENV MYSQL_VERSION 8.0.18
 ENV JBOSS_CLI /opt/jboss/wildfly/bin/jboss-cli.sh
 ENV DEPLOYMENT_DIR /opt/jboss/wildfly/standalone/deployments/
 #ENV JAVA_OPTS

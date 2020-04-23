@@ -18,7 +18,7 @@ services:
       - db
   db:
     container_name: "mysql-w-container"
-    image: "mysql:latest"
+    image: "mysql:8.0.18"
     environment:
       - MYSQL_DATABASE=test
       - MYSQL_USER=wildfly_user
